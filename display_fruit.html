@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>add</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="sneha">
+        <meta name="description" content="CRUD">
+        <link rel="stylesheet" href="display_fruit.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="con-1">
+                <form>
+                    <input id="fruitName" type="text" placeholder="Fruit name..."><br>
+                    <input style="margin-bottom:20px;" type="text" id="fruitColor" placeholder="Fruit color..."><br>
+                    <button id="add11" type="button"  onclick="add()">Add</button>
+                    <button type="button" onclick="update1()"  class="disable" id="update">update</button>
+                    <button type="button" onclick="reset()"> Reset </button>
+                    <br>
+                    <button style="margin-top:8px;" type="button" onclick="clearr()" > Clear </button>
+                </form>
+            </div>
+            <div class="con-2" id="con-2">
+
+                <div class="boxes" id="boxes">
+                    <!-- <div class="box-1">
+                        <p id="fruitname"><span>Fruit Name:</span> <span>Apple</span></p>
+                        <p id="fruitcolor"><span>Fruit Color:</span> Red</p>
+                        <button type="button">Edit</button>
+                        <button type="button">Delete</button>
+                    </div> -->
+            </div>
+
+        </div>
+        <div class="popup" id="popup">
+            <div class="round">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+            </div>
+            <h2 id="popupHeading">Entered value is Duplicate or <br> Input field is empty..</h2>
+            <button type="button" id="hide" >OK</button>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

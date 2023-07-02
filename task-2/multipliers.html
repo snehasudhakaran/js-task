@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multipler</title>
+        <style>
+             form{
+                width:20%;
+                display:block;
+                margin:70px auto;
+                display:flex;
+                gap:6px;
+             }
+             form input{
+                padding:8px 14px;
+                width:80%;
+                border:2px solid rgb(167, 164, 164);
+                border-radius: 8px;
+             }
+             form button{
+                background-color: black;
+                border-radius: 8px;
+                color:white;
+                padding: 5px 20px;
+             }
+             #con{
+                width:10%;
+                display:block;
+                margin: 10px auto;
+             }
+        </style>
+    </head>
+    <body>
+        <form>
+            <input type="number" placeholder="enter number between 1 -100" id="num">
+            <button type="button" id="btn" onclick="multipier()">output</button>
+        </form>
+           
+            <p id="con"></p>
+
+        <script>
+            let value1 = document.getElementById("num");
+            let button =document.getElementById("btn");
+            
+            function multipier(){
+                n=12
+                let text=""
+               for (let i=1; i<=n; i++){
+                text+=value1.value+ " × " +i +" = "+value1.value*i +"<br>"
+               }
+               document.getElementById("con").innerHTML=text;
+            }
+            
+        </script>
+    </body>
+</html>

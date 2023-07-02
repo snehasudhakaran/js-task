@@ -1,0 +1,90 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(77, 173, 173,0.2);
+}
+
+.container{
+    width:30%;
+    display:block;
+    margin:100px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.19);
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+.container h1{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container form{
+    width:80%;
+    display: block;
+    margin: auto;
+}
+.container form input,.container form select{
+    width:100%;
+    margin-bottom: 16px;
+    margin-top: 5px;
+    padding:10px 15px;
+    border: 1px solid rgb(167, 163, 163);
+    outline: none;
+    border-radius: 7px;
+}
+.container form select{
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance:none; */
+    appearance:none;
+    color:rgb(23, 23, 23);
+
+}
+.container form select option{
+    color: rgb(74, 73, 73);
+    border-radius: 0;
+}
+.container form label{
+    color:rgb(88, 87, 87);
+    font-size: 15px;
+    
+}
+.container form button{
+    margin-top: 10px;
+    margin-bottom: 3px;
+    margin-right: 4px;
+    border:none;
+    background: rgba(43, 177, 230, 0.9);
+    padding:6px 18px 8px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.19);
+    font-size: 16px;
+    color:white;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgb(0,0,0,0.2);
+}
+
+.navbar{
+    text-align: center;
+    margin: 40px 0px -50px;
+}
+
+a{
+    background-color: green;
+    padding:5px 19px 12px;
+    border-radius: 3px;
+    border: none;
+    color:white;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}

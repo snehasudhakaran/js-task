@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register1</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="register.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="register.html">Register</a>
+            <a href="home.html">Home</a>
+        </div>
+        <div class="container">
+            <h1>Registration form</h1>
+        <form method="get" action="home.html">
+
+            <label for="firstName">First Name:</label><br>
+            <input type="text" placeholder="Enter your first name...." id="firstName" name="firstName"><br>
+
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" placeholder="Enter your last name...." id="lastName" name="lastName"><br>
+            
+            <label for="age">Age:</label><br>
+            <input type="number" placeholder="Enter your age...." id="age" name="age"><br>
+
+            <label for="course">Course:</label><br>
+            <select name="course" id="course">
+                <option selected disabled style="color:grey">-- select --</option>
+                <option value="btech BME">Btech BME</option>
+                <option value="btech CSE">Btech CSE</option>
+                <option value="btech CSE (AI & DS)">btech CSE (AI & DS)</option>
+                <option value="CFIS">CFIS</option>
+            </select>
+            <button type="button" onclick="add()">Add</button>
+            <button type="button" onclick="reset()">Reset</button>
+            <button type="submit" id="submit">Submit</button>
+            <button type="button" id="update" onclick="update1()" id="update()">Update</button>
+
+        </form>
+
+        <script src="register.js">
+            /*let student={
+                firstName :"",
+                lastName : "",
+                age : "",
+                course : "",
+            }
+
+            let studentsDetails=JSON.parse(localStorage.getItem("students Details")) || [];
+
+            function add(){
+                
+                student = new Object;
+                student.firstName=document.getElementById("firstName").value;
+                student.lastName=document.getElementById("lastName").value;
+                student.age=document.getElementById("age").value;
+                student.course=document.getElementById("course").value;
+                
+                studentsDetails.push(student)
+
+                
+
+                console.log(student)
+                console.log(studentsDetails)
+                localStorage.setItem("students Details",JSON.stringify(studentsDetails))
+                reset()
+                redirect()
+            }
+
+            function redirect(){
+                window.location.href="display.html";
+            }
+
+            function reset(){
+                document.getElementById("firstName").value=null;
+                document.getElementById("lastName").value=null;
+                document.getElementById("age").value=null;
+                document.getElementById("course").value="-- select --";
+            };*/
+        </script>
+       
+        </div>
+    </body>
+</html>
